@@ -1,16 +1,47 @@
-h1 {
-	color: red;
-	font-family: "DM Sans", sans-serif;
+/* container */
+.container-fluid {
+	margin: 0;
+	padding: 0;
 }
 
-h2 {
-	font-family: "Jost", sans-serif;
+header {
+	margin: 0;
+	padding: 0;
 }
 
-h3 {
-	font-family: "Sniglet", cursive;
+/* navbar */
+
+.navbar {
+	background-color: navajowhite;
+	padding: 0px 0px;
+	margin: 0px 0px;
 }
 
-p {
-	font-family: "Work Sans", sans-serif;
+nav ul {
+	background-color: lightpink;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline;
+	list-style: none;
+	margin: 20px 5px;
+	padding: 0;
+	line-height: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #272142;
+}
+
+.navbar-icon {
+	display: block;
+}
+
+/* hero */
+
+.hero {
+	background-color: lightskyblue;
 }
