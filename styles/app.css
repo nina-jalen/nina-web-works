@@ -111,20 +111,22 @@ h1 {
 	/* transform: translate(-50%, -50%); */
 }
 
+/* ellipsis */
+.ellipsis {
+	text-align: center;
+	width: 100%;
+	font-size: 50px;
+	color: var(--branding-color);
+	line-height: 1;
+	margin: 50px 0;
+}
+
 /* projects */
 
 .projects-section {
-	margin: 30px 0;
+	margin: 0;
 	padding: 0;
 	display: inline;
-}
-
-.projects-section .content {
-	text-align: center;
-}
-
-.projects-section img {
-	max-height: 200px;
 }
 
 .projects-section .row {
@@ -133,12 +135,99 @@ h1 {
 	justify-content: space-evenly;
 	align-items: center;
 	background-color: lightblue;
+	padding: 0;
+	margin: 0;
+}
+
+.projects-section img {
+	max-height: 200px;
+}
+
+.projects-section .content {
+	text-align: center;
+	/* background-color: lightgoldenrodyellow; */
 	margin: 0;
 	padding: 0;
 }
 
-.projects-section .content {
-	/* background-color: lightgoldenrodyellow; */
+.btn-branding {
+	background: var(--branding-color);
+	color: var(--secondary-color);
+	text-align: center;
+	font-size: 18px;
+	border-radius: 4px;
+	line-height: 27px;
+	padding: 15px 30px;
+}
+
+/* about */
+
+.about-section {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+.ninja {
+	text-align: center;
+	width: 100%;
+	font-size: 120px;
+	color: var(--branding-color);
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+.about-section .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: lightblue;
+	padding: 0;
+	margin: 0;
+}
+
+.about-section .col {
+	/* background-color: lightcoral; */
+	padding: 0;
+	margin: 0;
+}
+
+/* skills & tools */
+
+.row-skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: lightblue;
+	padding: 0;
+	margin: 0;
+}
+
+.col-skills {
+	/* background-color: lightcoral; */
+	padding: 0;
+	margin: 0;
+}
+
+.ninja {
+	text-align: center;
+	width: 100%;
+	font-size: 120px;
+	color: var(--branding-color);
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+.html {
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	color: var(--branding-color);
+	line-height: 1;
 	margin: 0;
 	padding: 0;
 }
