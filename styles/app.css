@@ -32,8 +32,7 @@ header {
 }
 
 .header-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("/images/hero-image.jpg");
+	background-color: lightblue;
 	height: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -75,9 +74,10 @@ nav a {
 .icon {
 	display: block;
 	font-size: 30px;
-	color: var(--branding-color);
 	line-height: 1;
 	margin: 0 0 10px 0;
+	color: rgba(255, 0, 0, 0.659);
+	text-shadow: 3px 6px rgba(0, 13, 255, 0.75);
 }
 
 /* hero */
@@ -109,6 +109,18 @@ h1 {
 	/* top: 50%; */
 	/* left: 50%; */
 	/* transform: translate(-50%, -50%); */
+}
+
+.hero .row {
+	margin: 0;
+	padding: 0;
+	background-color: aquamarine;
+}
+
+.hero .col {
+	margin: 0;
+	padding: 0;
+	background-color: lightgreen;
 }
 
 /* ellipsis */
