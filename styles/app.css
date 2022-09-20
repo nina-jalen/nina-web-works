@@ -170,7 +170,7 @@ nav .icon {
 /* - break -  */
 button {
 	display: block;
-	margin: 70px auto;
+	margin: 80px auto;
 	padding: 4px 16px;
 	border-radius: 3px;
 	background: linear-gradient(
@@ -354,9 +354,22 @@ button {
 
 /* skills & tools */
 
+.about-section h4 {
+	text-align: left;
+	color: var(--heading-color);
+	font-family: var(--heading-font-family);
+	font-size: 25px;
+	line-height: 1.5;
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	margin: 10px 0 !important;
+	padding: 0px !important;
+}
+
 .row-skills .icon {
 	text-align: center;
-	height: 60px;
+	height: 50px;
 	width: auto;
 }
 
@@ -365,11 +378,11 @@ button {
 	font-family: var(--heading-font-family);
 	color: var(--text-color);
 	font-size: 17px;
-	line-height: 2;
+	line-height: 1.4;
 	font-weight: 300;
 	letter-spacing: 0px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-	margin: 0 !important;
+	margin: 7px 0 0 0 !important;
 	padding: 0px !important;
 }
 
@@ -385,7 +398,7 @@ button {
 .col-skills {
 	/* background-color: lightcoral; */
 	padding: 0 0;
-	margin: 10px 0;
+	margin: 7px 0;
 }
 
 /* /// */
@@ -396,10 +409,62 @@ button {
 
 /* contact */
 
-.contact-section {
-	margin: 0;
-	padding: 0;
-	display: inline;
+.contact-section h2 {
+	text-align: center;
+	color: var(--heading-color);
+	font-family: var(--heading-font-family);
+	font-size: 50px;
+	line-height: 1;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.contact-section h3 {
+	text-align: center;
+	color: var(--heading-color);
+	font-family: var(--heading-font-family);
+	font-size: 25px;
+	line-height: 1.5;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	margin: 15px 0 20px 0 !important;
+	padding: 0px !important;
+}
+
+.contact-section h5 {
+	text-align: center;
+	font-family: var(--heading-font-family);
+	color: var(--text-color);
+	font-size: 17px;
+	line-height: 2;
+	font-weight: 300;
+	letter-spacing: 0px;
+	/* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05); */
+	margin: 0 !important;
+	padding: 0px !important;
+}
+
+.contact-section .link {
+	text-align: center;
+	font-family: var(--heading-font-family);
+	background: -webkit-linear-gradient(
+		290deg,
+		rgb(245, 98, 224),
+		rgb(45, 108, 255)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 19px;
+	line-height: 2;
+	font-weight: 500;
+	letter-spacing: 0px;
+	/* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05); */
+	margin: 0 !important;
+	padding: 0px !important;
 }
 
 .col-contact {
@@ -408,21 +473,9 @@ button {
 	margin: 0;
 }
 
-.contact-section h4 {
-	text-align: center;
-	font-size: 20px;
-	line-height: 1;
-}
-
-.contact-section h5 {
-	text-align: center;
-	font-size: 20px;
-	line-height: 1;
-}
-
 /* footer */
 
-.footer-background {
+.footer-image {
 	background-color: lightblue;
 }
 
