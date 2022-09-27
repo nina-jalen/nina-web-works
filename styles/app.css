@@ -192,7 +192,7 @@ button {
 	text-align: center;
 	color: var(--heading-color);
 	font-family: var(--heading-font-family);
-	font-size: 50px;
+	font-size: 55px;
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -228,12 +228,12 @@ button {
 	text-align: center;
 	color: var(--heading-color);
 	font-family: var(--heading-font-family);
-	font-size: 25px;
+	font-size: 30px;
 	line-height: 1.5;
 	font-weight: 500;
 	letter-spacing: 0px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-	margin: 10px 0 5px 0 !important;
+	margin: 15px 0 5px 0 !important;
 	padding: 0px !important;
 }
 
@@ -241,13 +241,26 @@ button {
 	text-align: center;
 	font-family: var(--heading-font-family);
 	color: var(--text-color);
-	font-size: 17px;
+	font-size: 19px;
 	line-height: 1.6;
 	font-weight: 300;
 	letter-spacing: 0px;
 	/* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05); */
-	margin: 5px 0 15px !important;
+	margin: 5px 0 20px !important;
 	padding: 0px !important;
+}
+
+.projects-section b {
+	/* text-align: center; */
+	/* font-family: var(--heading-font-family); */
+	/* color: var(--text-color); */
+	/* font-size: 19px; */
+	/* line-height: 1.6; */
+	font-weight: 600;
+	/* letter-spacing: 0px; */
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+	/* margin: 5px 0 20px !important; */
+	/* padding: 0px !important; */
 }
 
 .projects-section img {
@@ -258,18 +271,18 @@ button {
 	/* background-color: lightcoral; */
 	text-align: center;
 	margin: 0;
-	padding: 0 50px;
+	padding: 0px 50px;
 }
 
-.btn-branding {
+.projects-section .btn-branding {
 	color: var(--body-color);
 	font-family: var(--heading-font-family);
 	text-align: center;
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 400;
 	border-radius: 4px;
 	letter-spacing: 0.5px;
-	padding: 13px 20px;
+	padding: 15px 25px;
 	margin: 0;
 	background: linear-gradient(
 		90deg,
@@ -278,11 +291,11 @@ button {
 	);
 	border: none;
 	border-radius: 30px;
-	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 	transition: all 180ms ease-in-out;
 }
 
-.btn-branding:hover {
+.projects-section .btn-branding:hover {
 	cursor: pointer;
 	color: var(--body-color);
 	box-shadow: 0px 0px 15px rgba(66, 66, 66, 0.2);
@@ -318,7 +331,7 @@ button {
 	text-align: left;
 	color: var(--heading-color);
 	font-family: var(--heading-font-family);
-	font-size: 50px;
+	font-size: 55px;
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -344,7 +357,7 @@ button {
 	text-align: left;
 	font-family: var(--heading-font-family);
 	color: var(--text-color);
-	font-size: 17px;
+	font-size: 19px;
 	line-height: 1.6;
 	font-weight: 300;
 	letter-spacing: 0px;
@@ -362,7 +375,7 @@ button {
 	text-align: left;
 	color: var(--heading-color);
 	font-family: var(--heading-font-family);
-	font-size: 25px;
+	font-size: 30px;
 	line-height: 1.5;
 	font-weight: 500;
 	letter-spacing: 0px;
@@ -381,7 +394,7 @@ button {
 	text-align: center;
 	font-family: var(--heading-font-family);
 	color: var(--text-color);
-	font-size: 17px;
+	font-size: 19px;
 	line-height: 1.4;
 	font-weight: 300;
 	letter-spacing: 0px;
@@ -417,7 +430,7 @@ button {
 	text-align: center;
 	color: var(--heading-color);
 	font-family: var(--heading-font-family);
-	font-size: 50px;
+	font-size: 55px;
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -443,7 +456,7 @@ button {
 	text-align: center;
 	font-family: var(--heading-font-family);
 	color: var(--text-color);
-	font-size: 17px;
+	font-size: 19px;
 	line-height: 2;
 	font-weight: 300;
 	letter-spacing: 0px;
@@ -475,12 +488,12 @@ button {
 	color: var(--body-color);
 	font-family: var(--heading-font-family);
 	text-align: center;
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 400;
 	border-radius: 4px;
 	letter-spacing: 0.5px;
-	padding: 13px 20px;
-	margin: 20px 0 90px 0;
+	padding: 15px 25px;
+	margin: 25px 0 90px 0;
 	background: linear-gradient(
 		90deg,
 		rgb(245, 98, 224, 0.9) 20%,
@@ -488,8 +501,14 @@ button {
 	);
 	border: none;
 	border-radius: 30px;
-	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 	transition: all 180ms ease-in-out;
+}
+
+.contact-section .btn-branding:hover {
+	cursor: pointer;
+	color: var(--body-color);
+	box-shadow: 0px 0px 15px rgba(66, 66, 66, 0.2);
 }
 
 /* footer */
