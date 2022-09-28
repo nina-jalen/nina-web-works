@@ -303,6 +303,29 @@ button {
 
 /* about */
 
+.about-section .profile {
+	display: block;
+	/* width: 100%; */
+	width: 200px;
+	height: 300px;
+	object-fit: fill;
+	margin: 0 auto;
+	padding: 0;
+	opacity: 0.95;
+	filter: blur(0.01rem);
+	border-radius: 70px 190px;
+}
+
+.about-section .profile:hover {
+	background-color: var(--branding-color);
+	opacity: 0.95;
+}
+
+.about-section row .profile {
+	margin: 0;
+	padding: 0;
+}
+
 .about-section img {
 	display: block;
 	text-align: center;
@@ -536,6 +559,10 @@ footer p {
 	font-weight: 400;
 	margin: 0 !important;
 	padding: 0px !important;
+}
+
+footer .source a:hover {
+	color: var(--secondary-color);
 }
 
 footer .github {
