@@ -9,7 +9,8 @@
 	--light-color: rgba(245, 245, 245, 0.9);
 	--dark-color: rgba(66, 66, 66);
 	--text-color: rgba(97, 97, 97);
-	--box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	--box-shadow: 1px 1px 1px rgba(66, 66, 66, 0.2);
+	--box-shadow-light: 1px 1px 1px rgba(66, 66, 66, 0.07);
 	--box-shadow-hover: 0px 0px 15px rgba(66, 66, 66, 0.2);
 }
 
@@ -17,7 +18,6 @@
 
 body {
 	background-color: var(--light-color);
-	/* font-family: --var(--section-font-family); */
 }
 
 /* header */
@@ -25,8 +25,8 @@ body {
 .header-image {
 	background: linear-gradient(
 		45deg,
-		rgb(245, 98, 224) 15%,
-		rgb(45, 108, 225) 100%
+		var(--gradient-start) 15%,
+		var(--gradient-end) 100%
 	);
 	height: 50%;
 	background-position: center;
@@ -41,13 +41,10 @@ nav ul {
 	display: flex;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	padding-left: 0 !important;
 }
 
 nav li {
 	display: inline;
-	margin-left: 15px;
-	margin-right: 15px;
 }
 
 nav a {
@@ -58,7 +55,7 @@ nav a {
 	text-decoration: none;
 	line-height: 1.5;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+	text-shadow: var(--box-shadow);
 }
 
 nav a:hover {
@@ -67,27 +64,22 @@ nav a:hover {
 
 nav img {
 	display: block;
-	margin: 5px auto;
 	max-height: 40px;
 }
 
 /* hero */
 
-.hero .div-img {
-	margin-right: 15px;
-	margin-bottom: 30px;
-	padding: 0 !important;
-}
-
 .hero img {
 	max-height: 220px;
-	float: right;
+}
+
+.hero .div-img {
+	margin-right: 15px;
+	margin-bottom: 25px;
 }
 
 .hero .div-h1 {
 	margin-left: 15px;
-	margin-bottom: 30px;
-	padding: 0 !important;
 }
 
 .hero h1 {
@@ -97,7 +89,6 @@ nav img {
 	font-size: 92px;
 	font-weight: 600;
 	line-height: 1;
-	display: block;
 	padding: 0 !important;
 	margin-bottom: 0 !important;
 }
@@ -119,9 +110,10 @@ button {
 	border-radius: 5px;
 	background: linear-gradient(
 		90deg,
-		rgb(245, 98, 224, 0.9) 20%,
-		rgb(45, 108, 225, 0.9) 100%
+		var(--gradient-start) 20%,
+		var(--gradient-end) 100%
 	);
+	opacity: 0.9;
 	border: none;
 	pointer-events: none;
 }
@@ -141,7 +133,7 @@ button {
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-shadow: var(--box-shadow);
 }
 
 .projects-section h3 {
@@ -152,7 +144,7 @@ button {
 	line-height: 1.5;
 	font-weight: 400;
 	letter-spacing: -0.5px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-shadow: var(--box-shadow-light);
 	margin: 15px 0 50px 0 !important;
 }
 
@@ -172,7 +164,7 @@ button {
 	line-height: 1.5;
 	font-weight: 500;
 	letter-spacing: 0px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-shadow: var(--box-shadow);
 	margin: 15px 0 5px 0 !important;
 }
 
@@ -184,14 +176,13 @@ button {
 	line-height: 1.6;
 	font-weight: 300;
 	letter-spacing: 0px;
-	/* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05); */
 	margin: 5px 10px 20px 10px !important;
 	padding: 0px !important;
 }
 
 .projects-section b {
 	font-weight: 600;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+	text-shadow: var(--box-shadow-light);
 }
 
 .projects-section img {
@@ -210,11 +201,12 @@ button {
 	padding: 15px 25px;
 	margin: 0;
 	background: linear-gradient(
-		90deg,
-		rgb(245, 98, 224, 0.9) 20%,
-		rgb(45, 108, 225, 0.9) 100%
+		45deg,
+		var(--gradient-start) 30%,
+		var(--gradient-end) 100%
 	);
 	border: none;
+	opacity: 0.9;
 	border-radius: 30px;
 	box-shadow: var(--box-shadow);
 	transition: all 180ms ease-in-out;
@@ -228,29 +220,17 @@ button {
 
 /* about */
 
-.about-section .row-about {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	/* text-align: center; */
-}
-
 .about-section .profile-image {
 	width: 200px;
 	height: 300px;
-	object-fit: fill;
 	margin-right: 20px;
 	opacity: 0.95;
-	filter: blur(0.01rem);
 	border-radius: 70px 190px;
-	padding: 0 !important;
-	filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.2));
+	filter: drop-shadow(var(--box-shadow-hover));
 }
 
 .about-section .profile-image:hover {
 	background-color: var(--gradient-start);
-	filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.2));
-	opacity: 0.95;
 }
 
 .about-section h2 {
@@ -261,7 +241,7 @@ button {
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-shadow: var(--box-shadow);
 	margin: 0 0 10px 0 !important;
 }
 
@@ -273,7 +253,7 @@ button {
 	line-height: 1.5;
 	font-weight: 400;
 	letter-spacing: -0.5px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-shadow: var(--box-shadow-light);
 	margin: 15px 0 5px 0 !important;
 }
 
@@ -287,7 +267,6 @@ button {
 }
 
 /* /// */
-/* /// */
 
 /* skills & tools */
 
@@ -299,17 +278,10 @@ button {
 	line-height: 1.5;
 	font-weight: 500;
 	letter-spacing: 0px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-	margin: 15px 0 !important;
+	text-shadow: var(--box-shadow);
 }
 
-.row-skills .icon {
-	display: block;
-	height: 50px;
-	margin: 0 auto;
-}
-
-.row-skills h5 {
+h5 {
 	text-align: center;
 	font-family: var(--section-font-family);
 	color: var(--text-color);
@@ -317,12 +289,14 @@ button {
 	line-height: 1.4;
 	font-weight: 300;
 	letter-spacing: 0px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-	margin: 7px 0 0 0 !important;
+	text-shadow: var(--box-shadow-light);
+	margin-top: 7px;
 }
 
-.col-skills {
-	margin: 10px 0;
+.icon {
+	display: block;
+	margin: 0 auto;
+	height: 50px;
 }
 
 /* contact */
@@ -335,7 +309,7 @@ button {
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-shadow: var(--box-shadow);
 	margin: 0px !important;
 }
 
@@ -347,7 +321,7 @@ button {
 	line-height: 1.5;
 	font-weight: 400;
 	letter-spacing: -0.5px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-shadow: var(--box-shadow-light);
 	margin: 15px 0 20px 0 !important;
 }
 
@@ -366,9 +340,9 @@ button {
 	text-align: center;
 	font-family: var(--section-font-family);
 	background: -webkit-linear-gradient(
-		290deg,
-		rgb(245, 98, 224),
-		rgb(45, 108, 255)
+		45deg,
+		var(--gradient-start) 15%,
+		var(--gradient-end) 100%
 	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -376,7 +350,6 @@ button {
 	line-height: 2;
 	font-weight: 500;
 	letter-spacing: 0px;
-	/* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05); */
 	margin: 0 !important;
 	padding: 0px !important;
 }
@@ -391,10 +364,11 @@ button {
 	padding: 15px 25px;
 	margin: 25px 0 90px 0;
 	background: linear-gradient(
-		90deg,
-		rgb(245, 98, 224, 0.9) 20%,
-		rgb(45, 108, 225, 0.9) 100%
+		45deg,
+		var(--gradient-start) 30%,
+		var(--gradient-end) 100%
 	);
+	opacity: 0.9;
 	border: none;
 	border-radius: 30px;
 	box-shadow: var(--box-shadow);
@@ -412,58 +386,51 @@ button {
 footer .social-links a {
 	color: var(--gradient-start);
 	font-size: 20px;
+	text-shadow: var(--box-shadow);
+	padding: 0 13px;
+	margin-top: 15px;
+	margin-bottom: 20px;
 	transition: all 200ms ease-in;
-	padding: 10px 15px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-	margin: 5px 0 10px 0 !important;
 }
 
 footer .social-links a:hover {
 	color: var(--gradient-end);
-	text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.1);
 }
 
 footer p {
 	text-align: center;
 	font-family: var(--section-font-family);
-	color: rgba(245, 245, 245, 0.8);
+	color: var(--light-color);
 	font-size: 10px;
 	line-height: 1;
 	font-weight: 400;
-	margin: 0 !important;
-	padding: 0px !important;
+}
+
+footer .source a {
+	color: var(--light-color);
+	text-decoration: none;
 }
 
 footer .source a:hover {
 	color: var(--gradient-end);
-	text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.1);
 }
 
-footer .github {
-	text-align: center;
-	font-family: var(--hero-font-family);
-	color: rgba(245, 245, 245, 0.8);
-	font-size: 10px;
-	line-height: 1;
-	font-weight: 400;
-	text-decoration: none;
-	margin: 0px 0 !important;
-	padding: 0px !important;
-}
-
+/* // */
+/* // */
+/* // */
+/* // */
 /* media */
 
 @media (max-width: 576px) {
 	/* navbar */
 
 	nav ul {
-		margin-top: 40px;
+		margin-top: 30px;
 		margin-bottom: 25px;
 	}
 
 	nav a {
 		font-size: 15px;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 	}
 
 	/* hero */
@@ -522,8 +489,8 @@ footer .github {
 		font-size: 25px;
 		background: -webkit-linear-gradient(
 			45deg,
-			rgb(245, 98, 224) 30%,
-			rgb(45, 108, 255) 100%
+			var(--gradient-start) 30%,
+			var(--gradient-end) 100%
 		);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -540,6 +507,37 @@ footer .github {
 
 	.projects-section .content {
 		margin-bottom: 25px !important;
+	}
+
+	/* about */
+
+	.about-section .profile-image {
+		width: 140px;
+		max-height: 210px;
+	}
+
+	.about-section h2 {
+		font-size: 40px;
+	}
+
+	.about-section h3 {
+		font-size: 20px;
+	}
+
+	.about-section p {
+		font-size: 17px;
+	}
+
+	/* skills & tools */
+
+	.about-section h4 {
+		text-align: left;
+		font-size: 25px;
+	}
+
+	h5 {
+		text-align: left;
+		font-size: 17px;
 	}
 
 	/* contact */
@@ -560,8 +558,8 @@ footer .github {
 		font-size: 17px;
 		background: -webkit-linear-gradient(
 			45deg,
-			rgb(245, 98, 224) 10%,
-			rgb(45, 108, 255) 100%
+			var(--gradient-start) 10%,
+			var(--gradient-end) 100%
 		);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -577,5 +575,34 @@ footer .github {
 	footer .social-links a {
 		font-size: 20px;
 		padding: 10px 10px;
+	}
+}
+
+/* // */
+/* // */
+/* // */
+/* // */
+/* media */
+
+@media (max-width: 992px) {
+	/* about */
+
+	.about-section .profile-image {
+		margin: 0 auto;
+		height: 310px;
+	}
+
+	.about-section h2 {
+		text-align: center;
+		margin-top: 40px !important;
+	}
+
+	.about-section h3 {
+		text-align: center;
+	}
+
+	.about-section p {
+		text-align: justify;
+		margin-top: 20px !important;
 	}
 }
