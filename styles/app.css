@@ -75,7 +75,7 @@ nav img {
 
 .hero .div-img {
 	margin-right: 15px;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 
 .hero .div-h1 {
@@ -89,7 +89,6 @@ nav img {
 	font-size: 92px;
 	font-weight: 600;
 	line-height: 1;
-	padding: 0 !important;
 	margin-bottom: 0 !important;
 }
 
@@ -113,7 +112,7 @@ button {
 		var(--gradient-start) 20%,
 		var(--gradient-end) 100%
 	);
-	opacity: 0.9;
+	opacity: 0.85;
 	border: none;
 	pointer-events: none;
 }
@@ -145,7 +144,8 @@ button {
 	font-weight: 400;
 	letter-spacing: -0.5px;
 	text-shadow: var(--box-shadow-light);
-	margin: 15px 0 50px 0 !important;
+	margin-top: 15px;
+	margin-bottom: 40px;
 }
 
 .projects-section .row {
@@ -163,9 +163,10 @@ button {
 	font-size: 30px;
 	line-height: 1.5;
 	font-weight: 500;
-	letter-spacing: 0px;
+	letter-spacing: 0.5px;
 	text-shadow: var(--box-shadow);
-	margin: 15px 0 5px 0 !important;
+	margin-top: 15px;
+	margin-bottom: 5px;
 }
 
 .projects-section p {
@@ -175,9 +176,6 @@ button {
 	font-size: 19px;
 	line-height: 1.6;
 	font-weight: 300;
-	letter-spacing: 0px;
-	margin: 5px 10px 20px 10px !important;
-	padding: 0px !important;
 }
 
 .projects-section b {
@@ -199,7 +197,6 @@ button {
 	font-weight: 400;
 	letter-spacing: 0.5px;
 	padding: 15px 25px;
-	margin: 0;
 	background: linear-gradient(
 		45deg,
 		var(--gradient-start) 30%,
@@ -226,11 +223,7 @@ button {
 	margin-right: 20px;
 	opacity: 0.95;
 	border-radius: 70px 190px;
-	filter: drop-shadow(var(--box-shadow-hover));
-}
-
-.about-section .profile-image:hover {
-	background-color: var(--gradient-start);
+	filter: drop-shadow(1px 1px 4px var(--text-color));
 }
 
 .about-section h2 {
@@ -242,7 +235,7 @@ button {
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-shadow: var(--box-shadow);
-	margin: 0 0 10px 0 !important;
+	margin-bottom: 10px;
 }
 
 .about-section h3 {
@@ -254,7 +247,8 @@ button {
 	font-weight: 400;
 	letter-spacing: -0.5px;
 	text-shadow: var(--box-shadow-light);
-	margin: 15px 0 5px 0 !important;
+	margin-top: 15px;
+	margin-bottom: 5px;
 }
 
 .about-section p {
@@ -290,7 +284,7 @@ h5 {
 	font-weight: 300;
 	letter-spacing: 0px;
 	text-shadow: var(--box-shadow-light);
-	margin-top: 7px;
+	margin-top: 10px;
 }
 
 .icon {
@@ -310,7 +304,6 @@ h5 {
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-shadow: var(--box-shadow);
-	margin: 0px !important;
 }
 
 .contact-section h3 {
@@ -322,7 +315,8 @@ h5 {
 	font-weight: 400;
 	letter-spacing: -0.5px;
 	text-shadow: var(--box-shadow-light);
-	margin: 15px 0 20px 0 !important;
+	margin-top: 15px;
+	margin-bottom: 20px;
 }
 
 .contact-section p {
@@ -333,12 +327,10 @@ h5 {
 	line-height: 2;
 	font-weight: 300;
 	letter-spacing: 0px;
-	margin: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 .contact-section .link {
-	text-align: center;
-	font-family: var(--section-font-family);
 	background: -webkit-linear-gradient(
 		45deg,
 		var(--gradient-start) 15%,
@@ -346,12 +338,7 @@ h5 {
 	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 19px;
-	line-height: 2;
 	font-weight: 500;
-	letter-spacing: 0px;
-	margin: 0 !important;
-	padding: 0px !important;
 }
 
 .contact-section .btn-branding {
@@ -362,17 +349,18 @@ h5 {
 	font-weight: 400;
 	letter-spacing: 0.5px;
 	padding: 15px 25px;
-	margin: 25px 0 90px 0;
 	background: linear-gradient(
 		45deg,
 		var(--gradient-start) 30%,
 		var(--gradient-end) 100%
 	);
-	opacity: 0.9;
 	border: none;
+	opacity: 0.9;
 	border-radius: 30px;
 	box-shadow: var(--box-shadow);
 	transition: all 180ms ease-in-out;
+	margin-top: 25px;
+	margin-bottom: 90px;
 }
 
 .contact-section .btn-branding:hover {
@@ -390,7 +378,7 @@ footer .social-links a {
 	padding: 0 13px;
 	margin-top: 15px;
 	margin-bottom: 20px;
-	transition: all 200ms ease-in;
+	transition: all 180ms ease-in;
 }
 
 footer .social-links a:hover {
@@ -407,12 +395,7 @@ footer p {
 }
 
 footer .source a {
-	color: var(--light-color);
 	text-decoration: none;
-}
-
-footer .source a:hover {
-	color: var(--gradient-end);
 }
 
 /* // */
@@ -436,24 +419,24 @@ footer .source a:hover {
 	/* hero */
 
 	.hero .row {
-		margin: 0 20px;
 		float: center;
+		margin: 0 20px;
 	}
 
 	.hero .div-img {
-		margin: auto;
 		display: flex;
+		margin: auto;
+	}
+
+	.hero .div-h1 {
+		margin: auto;
+		display: block;
 	}
 
 	.hero img {
 		max-height: 150px;
 		margin: auto;
 		margin-bottom: 10px;
-	}
-
-	.hero .div-h1 {
-		margin: auto;
-		display: block;
 	}
 
 	.hero h1 {
@@ -472,9 +455,14 @@ footer .source a:hover {
 
 	button {
 		margin: 60px auto;
+		padding: 3px 14px;
 	}
 
 	/* projects */
+
+	.projects-section .content {
+		margin-bottom: 20px;
+	}
 
 	.projects-section h2 {
 		font-size: 40px;
@@ -482,7 +470,7 @@ footer .source a:hover {
 
 	.projects-section h3 {
 		font-size: 20px;
-		margin-bottom: 10px !important;
+		margin-bottom: 10px;
 	}
 
 	.projects-section h4 {
@@ -505,10 +493,6 @@ footer .source a:hover {
 		padding: 13px 22px;
 	}
 
-	.projects-section .content {
-		margin-bottom: 25px !important;
-	}
-
 	/* about */
 
 	.about-section .profile-image {
@@ -526,18 +510,13 @@ footer .source a:hover {
 
 	.about-section p {
 		font-size: 17px;
+		text-align: center !important;
 	}
 
 	/* skills & tools */
 
 	.about-section h4 {
-		text-align: left;
 		font-size: 25px;
-	}
-
-	h5 {
-		text-align: left;
-		font-size: 17px;
 	}
 
 	/* contact */
@@ -567,14 +546,15 @@ footer .source a:hover {
 
 	.contact-section .btn-branding {
 		font-size: 15px;
-		padding: 12px 22px;
+		padding: 13px 22px;
 	}
 
 	/* footer */
 
 	footer .social-links a {
-		font-size: 20px;
 		padding: 10px 10px;
+		margin-top: 5px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -594,6 +574,7 @@ footer .source a:hover {
 
 	.about-section h2 {
 		text-align: center;
+		/* or justify ? */
 		margin-top: 40px !important;
 	}
 
