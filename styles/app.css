@@ -217,6 +217,10 @@ button {
 
 /* about */
 
+.about-section row {
+	align-items: flex-start;
+}
+
 .about-section .profile-image {
 	width: 200px;
 	height: 300px;
@@ -396,12 +400,14 @@ footer p {
 
 footer .source a {
 	text-decoration: none;
+	color: var(--light-color);
 }
 
 /* // */
 /* // */
 /* // */
 /* // */
+
 /* media */
 
 @media (max-width: 576px) {
@@ -461,7 +467,7 @@ footer .source a {
 	/* projects */
 
 	.projects-section .content {
-		margin-bottom: 20px;
+		margin-bottom: 20px !important;
 	}
 
 	.projects-section h2 {
@@ -510,7 +516,6 @@ footer .source a {
 
 	.about-section p {
 		font-size: 17px;
-		text-align: center !important;
 	}
 
 	/* skills & tools */
@@ -562,6 +567,7 @@ footer .source a {
 /* // */
 /* // */
 /* // */
+
 /* media */
 
 @media (max-width: 992px) {
@@ -574,7 +580,6 @@ footer .source a {
 
 	.about-section h2 {
 		text-align: center;
-		/* or justify ? */
 		margin-top: 40px !important;
 	}
 
