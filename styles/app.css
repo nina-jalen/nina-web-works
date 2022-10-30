@@ -215,6 +215,10 @@ button {
 	max-height: 150px;
 }
 
+.projects-section .react-btn {
+	filter: grayscale(90%);
+}
+
 /* about */
 
 .about-section row {
