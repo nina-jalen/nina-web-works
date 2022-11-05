@@ -265,10 +265,8 @@ footer .social-links a {
 	color: var(--gradient-start);
 	font-size: 20px;
 	text-shadow: var(--box-shadow);
-	padding: 0 13px;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	line-height: 1.5;
+	padding: 10px;
+	line-height: 2;
 	transition: all 180ms ease-in;
 }
 
@@ -413,7 +411,7 @@ footer .source a {
 	}
 
 	.about-section .icon {
-		height: 45px;
+		height: 40px;
 	}
 
 	/* contact */
@@ -437,8 +435,6 @@ footer .source a {
 	/* footer */
 
 	footer .social-links a {
-		padding: 10px 10px;
-		margin-top: 5px;
-		margin-bottom: 10px;
+		font-size: 18px;
 	}
 }
