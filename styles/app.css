@@ -323,16 +323,16 @@ footer .source a {
 		font-size: 20px;
 	}
 
-	h5 {
-		font-size: 17px;
-	}
-
 	h4 {
 		font-size: 25px;
 	}
 
+	h5 {
+		font-size: 13px;
+	}
+
 	p {
-		font-size: 17px;
+		font-size: 15px;
 	}
 
 	/* navbar */
@@ -411,13 +411,17 @@ footer .source a {
 	}
 
 	.about-section .icon {
-		height: 40px;
+		height: 35px;
+	}
+
+	.about-section .col-skills {
+		margin-top: 10px !important;
 	}
 
 	/* contact */
 
 	.contact-section .link {
-		font-size: 17px;
+		font-size: 15px;
 		background: -webkit-linear-gradient(
 			45deg,
 			var(--gradient-start) 10%,
