@@ -1,9 +1,6 @@
 :root {
-	/* fonts */
 	--hero-font-family: "Work Sans", sans-serif;
 	--section-font-family: "DM Sans", sans-serif;
-
-	/* colors */
 	--gradient-start: rgb(245, 98, 224);
 	--gradient-end: rgb(45, 108, 255);
 	--light-color: rgba(245, 245, 245, 0.9);
@@ -86,7 +83,6 @@ p {
 		var(--gradient-end) 100%
 	);
 	border: none;
-	opacity: 0.9;
 	border-radius: 30px;
 	box-shadow: var(--box-shadow);
 	transition: all 180ms ease-in-out;
@@ -120,13 +116,8 @@ body {
 /* navbar */
 
 nav ul {
-	display: flex;
 	margin-top: 30px;
 	margin-bottom: 30px;
-}
-
-nav li {
-	display: inline;
 }
 
 nav a {
@@ -145,7 +136,6 @@ nav a:hover {
 }
 
 nav img {
-	display: block;
 	max-height: 40px;
 }
 
@@ -197,13 +187,6 @@ button {
 	margin-bottom: 60px;
 }
 
-.projects-section .row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	text-align: center;
-}
-
 .projects-section b {
 	font-weight: 600;
 	text-shadow: var(--box-shadow-light);
@@ -213,12 +196,6 @@ button {
 	display: block;
 	margin: 0 auto;
 	max-height: 150px;
-}
-
-/* about */
-
-.about-section row {
-	align-items: flex-start;
 }
 
 .about-section .profile-image {
