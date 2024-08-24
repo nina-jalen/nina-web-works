@@ -200,11 +200,12 @@ button {
 }
 
 .about-section .profile-image {
-	width: 200px;
-	height: 300px;
+	width: calc(100% - 20px);
+    height: max-content;
 	margin-right: 20px;
+	margin-top: 30px;
 	opacity: 0.95;
-	border-radius: 70px 190px;
+	border-radius: 50%;
 }
 
 .about-section h2,
@@ -276,7 +277,7 @@ footer .source a {
 
 	.about-section .profile-image {
 		margin: 0 auto;
-		height: 310px;
+		width: 250px;
 	}
 
 	.about-section h2 {
@@ -387,8 +388,7 @@ footer .source a {
 	/* about */
 
 	.about-section .profile-image {
-		width: 140px;
-		max-height: 210px;
+		width: 200px;
 	}
 
 	.about-section .icon {
