@@ -201,7 +201,7 @@ button {
 
 .about-section .profile-image {
 	width: calc(100% - 30px);
-    height: max-content;
+    height: fit-content;
 	margin-right: 20px;
 	margin-top: 30px;
 	opacity: 0.95;
@@ -278,6 +278,7 @@ footer .source a {
 	.about-section .profile-image {
 		margin: 0 auto;
 		width: 250px;
+		height: auto;
 	}
 
 	.about-section h2 {
@@ -389,6 +390,7 @@ footer .source a {
 
 	.about-section .profile-image {
 		width: 200px;
+		height: 200px;
 	}
 
 	.about-section .icon {
