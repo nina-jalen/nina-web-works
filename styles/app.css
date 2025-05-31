@@ -42,9 +42,9 @@ h2 {
 }
 
 h3 {
-	font-size: 25px;
-	font-weight: 400;
-	letter-spacing: -0.5px;
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 2px;
 	text-shadow: var(--box-shadow-light);
 }
 
