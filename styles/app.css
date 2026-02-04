@@ -14,13 +14,13 @@
 /* elements */
 
 h1 {
-    text-align: left;
-    color: var(--light-color);
-    font-family: var(--hero-font-family);
-    font-size: 120px;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    line-height: 0.8;
+	text-align: left;
+	color: var(--light-color);
+	font-family: var(--hero-font-family);
+	font-size: 120px;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	line-height: 0.8;
 }
 
 h2,
@@ -158,11 +158,11 @@ nav img {
 
 .hero p {
 	text-align: left;
-    color: var(--light-color);
-    font-family: var(--hero-font-family);
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 0.5;
+	color: var(--light-color);
+	font-family: var(--hero-font-family);
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 0.5;
 }
 
 /* break */
@@ -202,7 +202,7 @@ button {
 
 .about-section .profile-image {
 	width: 280px;
-    height: 280px;
+	height: 280px;
 	margin-right: 20px;
 	margin-top: 30px;
 	opacity: 0.95;
@@ -275,7 +275,6 @@ footer .source a {
 
 /* media lg */
 
-
 @media (max-width: 1100px) {
 	.hero p {
 		display: none;
@@ -283,7 +282,6 @@ footer .source a {
 }
 
 @media (max-width: 992px) {
-
 	h1 {
 		font-size: 80px;
 		margin-bottom: 15px;
@@ -293,8 +291,6 @@ footer .source a {
 		font-size: 50px;
 	}
 
-	
-	
 	/* about */
 
 	.about-section .profile-image {
